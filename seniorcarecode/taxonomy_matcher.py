@@ -26,7 +26,7 @@ class TaxonomyMatcher:
             self.matched_taxonomies = ["Food","Holiday Assistance"]
   	#utlity-assistance
   	if self.isElectricServicePaymentAssistance():
- 		        self.matched_taxonomies = []
+            self.matched_taxonomies = []
             self.matched_taxonomies = ["Electric service","Electric payment","Electric"]
   	if self.isGasServicePaymentAssistance():
             self.matched_taxonomies = []
@@ -34,15 +34,15 @@ class TaxonomyMatcher:
 
   	#housing
   	if self.isDomesticViolence():
- 	          self.matched_taxonomies = [ ]
+ 	    self.matched_taxonomies = [ ]
             self.matched_taxonomies = ["Domestic Violence Shelters"]
 
   	if self.isTenantRights():
-  		      self.matched_taxonomies = [ ]
+            self.matched_taxonomies = [ ]
             self.matched_taxonomies = ["Landlord/Tenant Assistance","Tenant Rights Information/Counseling"]
 
   	if self.isYouthShelter():
-  		      self.matched_taxonomies = [ ]
+            self.matched_taxonomies = [ ]
             self.matched_taxonomies = ["Youth Shelters", "Runaway shelters"]
 
   	if self.isRentPaymentAssistance():
@@ -51,61 +51,62 @@ class TaxonomyMatcher:
   		#print matched_taxonomies
 
   	if self.isLowCostListing():
-  		      self.matched_taxonomies = [ ]
+  	    self.matched_taxonomies = [ ]
             self.matched_taxonomies = ["Low Income/Subsidized Private Rental Housing","Home Rental Listings", "Home low cost listings"]
 
   	if self.isVeteranRentalAssistance():
-  		      self.matched_taxonomies = [ ]
+  	    self.matched_taxonomies = [ ]
             self.matched_taxonomies = ["shelter for veterans","rental assistance"]
   	
   	if self.isHIVRentalAssistance():
- 		        self.matched_taxonomies = [ ]
+            self.matched_taxonomies = [ ]
             self.matched_taxonomies = ["AIDS"]
 
   	if self.isHomeless():
-        		self.matched_taxonomies = [ ]
+            self.matched_taxonomies = [ ]
             if self.isHomelessVeteran():
-	               self.matched_taxonomies = ["Homeless Veterans"]
+	        self.matched_taxonomies = ["Homeless Veterans"]
 
             elif self.isAtRiskOfHomeless():
-	               self.matched_taxonomies = ["At Risk for Homelessness"]
+	        self.matched_taxonomies = ["At Risk for Homelessness"]
 
-        		elif self.isHomelessMale():
-        			   self.matched_taxonomies = ["Homeless Men"]
+            elif self.isHomelessMale():
+                self.matched_taxonomies = ["Homeless Men"]
         		
-        		elif self.isHomelessFemale():
-                 self.matched_taxonomies = ["Homeless Women"]
+            elif self.isHomelessFemale():
+                self.matched_taxonomies = ["Homeless Women"]
+			
             else:
-                 self.matched_taxonomies = ["Homeless Families"]
+                self.matched_taxonomies = ["Homeless Families"]
 
-    #senior
-    if self.isAdaptiveTech():
-            self.matched_taxonomies = [ ]
-            self.matched_taxonomies = [""]
-    
-    if self.isSeniorCenters():
-            self.matched_taxonomies = [ ]
-            self.matched_taxonomies = [""]
-    
-    if self.isCaregiverSupportGroups():
-            self.matched_taxonomies = [ ]
-            self.matched_taxonomies = ["Caregiver/Care Receiver Support Groups"]
-    
-    if self.isCaregiverTraining():
-            self.matched_taxonomies = [ ]
-            self.matched_taxonomies = ["Caregiver Training"]
-    
-    if self.isIHSS():
-            self.matched_taxonomies = [ ]
-            self.matched_taxonomies = ["In Home Supportive Services Application","In Home Supportive Services Subsidies"]
-    
-    if self.isPersonalCare():
-            self.matched_taxonomies = [ ]
-            self.matched_taxonomies = ["I need a caregiver"]
-    
-    if self.isRespiteCare():
-            self.matched_taxonomies = [ ]
-            self.matched_taxonomies = ["Adult In Home Respite Care"]
+        #senior
+        if self.isAdaptiveTech():
+	    self.matched_taxonomies = [ ]
+	    self.matched_taxonomies = [""]
+
+        if self.isSeniorCenters():
+	    self.matched_taxonomies = [ ]
+	    self.matched_taxonomies = [""]
+
+        if self.isCaregiverSupportGroups():
+	    self.matched_taxonomies = [ ]
+	    self.matched_taxonomies = ["Caregiver/Care Receiver Support Groups"]
+
+        if self.isCaregiverTraining():
+	    self.matched_taxonomies = [ ]
+	    self.matched_taxonomies = ["Caregiver Training"]
+
+        if self.isIHSS():
+	    self.matched_taxonomies = [ ]
+	    self.matched_taxonomies = ["In Home Supportive Services Application","In Home Supportive Services Subsidies"]
+
+        if self.isPersonalCare():
+	    self.matched_taxonomies = [ ]
+	    self.matched_taxonomies = ["I need a caregiver"]
+
+        if self.isRespiteCare():
+	    self.matched_taxonomies = [ ]
+	    self.matched_taxonomies = ["Adult In Home Respite Care"]
 
 
   	return self.matched_taxonomies
