@@ -1,0 +1,64 @@
+<div>
+  
+  <nav aria-label="breadcrumb" role="navigation">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="#!/">Home</a></li>
+		<li class="breadcrumb-item"><a href="#!/care">Senior/Care Support</a></li>
+		<li class="breadcrumb-item active">Care Giver Services</li>
+	</ol>
+  </nav>
+  <h2><center>Care Giver Services</center></h2>
+  <hr>
+  <div class="lead">
+    <button class="btn btn-primary btn-lg btn-block btn-mobile"
+       data-ng-click="fn.recommend('care/senior-care-support/caregiver-support-groups'); rp_disabled= false"
+       data-ng-disabled="rp_disabled">
+      Caregiver Support Groups
+    </button>
+  </div>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+       data-ng-click="fn.recommend('care/senior-care-support/caregiver-training'); lc_disabled = false"
+       data-ng-disabled="lc_disabled">
+      Caregiver Training
+    </button>
+  </div>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+            data-ng-click="fn.recommend('care/senior-care-support/ihss'); vet_disabled = false"
+            data-ng-disabled="vet_disabled">
+      In Home Support Services (IHSS)
+    </button>
+  </div>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+            data-ng-click="fn.recommend('care/senior-care-support/personal-care'); hiv_disabled = false"
+            data-ng-disabled="hiv_disabled">
+      Personal Care
+    </button>
+  </div>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+            data-ng-click="fn.recommend('care/senior-care-support/respite-care'); hiv_disabled = false"
+            data-ng-disabled="hiv_disabled">
+      Respite Care
+    </button>
+  </div>
+
+  <div class="lead">
+      <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+            data-ng-click="fn.recommend('care/senior-care-support/senior-food-needs'); hiv_disabled = false"
+            data-ng-disabled="hiv_disabled">
+      Senior Food Need
+    </button>
+  </div>
+
+
+  <div ng-show="false">
+    <recommend-button fn="fn"></recommend-button>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div>
+  
+  <nav aria-label="breadcrumb" role="navigation">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="#!/">Home</a></li>
+		<li class="breadcrumb-item"><a href="#!/care">Senior/Care Support</a></li>
+		<li class="breadcrumb-item active">Diseases</li>
+	</ol>
+  </nav>
+  <h2><center>Diseases</center></h2>
+  <hr>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+       data-ng-click="fn.recommend('care/diseases/chronic-disease-management'); lc_disabled = false"
+       data-ng-disabled="lc_disabled">
+      Chronic disease management
+    </button>
+  </div>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+            data-ng-click="fn.recommend('care/diseases/alzhiemers'); vet_disabled = false"
+            data-ng-disabled="vet_disabled">
+      Alzhiemers
+    </button>
+  </div>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+            data-ng-click="fn.recommend('care/diseases/diabetes'); hiv_disabled = false"
+            data-ng-disabled="hiv_disabled">
+      Diabetes
+    </button>
+  </div>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+            data-ng-click="fn.recommend('care/diseases/heart-disease'); hiv_disabled = false"
+            data-ng-disabled="hiv_disabled">
+      Heart disease
+    </button>
+  </div>
+
+
+  <div ng-show="false">
+    <recommend-button fn="fn"></recommend-button>
+  </div>
+</div>

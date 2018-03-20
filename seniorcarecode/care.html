@@ -1,0 +1,57 @@
+<div>
+ <!-- <a href="#!/home">Back</a><br>-->
+  <nav aria-label="breadcrumb" role="navigation">
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="#!/">Home</a></li>
+		<li class="breadcrumb-item active">Senior-Care Support</li>
+	</ol>
+  </nav>
+  <h2><center>Senior-Care Support</center></h2>
+  <hr>
+
+  <div class="lead">
+    <a href="#!/care/senior-care-support" class="btn btn-primary btn-lg btn-block btn-mobile">
+      Care Giver Services
+    </a>
+<div style ="font-size: 9pt">You are a caregiver if you help an older or dependent adult with any of the following:-<br>
+<ul>
+	<li>Preparing Meals</li>
+	<li>Bathing and Getting Dressed</li>
+	<li>Grocery Shopping</li>
+	<li>Cleaning the House</li>
+	<li>Managing Medications</li>
+	<li>Arranging for Services</li>
+	<li>Paying Household Bills</li>
+	<li>Getting In and Out of Bed</li>
+	<li>Getting to Doctor Visits</li>
+</ul>
+ </div>
+  </div>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+            data-ng-click="fn.recommend('care/adaptive-tech'); vet_disabled = false"
+            data-ng-disabled="vet_disabled">
+      Adaptive Tech
+    </button>
+  </div>
+
+  <div class="lead">
+    <button class="btn btn-secondary btn-lg btn-block btn-mobile"
+            data-ng-click="fn.recommend('care/senior-centers'); vet_disabled = false"
+            data-ng-disabled="vet_disabled">
+      Senior Centers
+    </button>
+  </div>
+
+  <div class="lead">
+    <a href="#!/care/diseases" class="btn btn-primary btn-lg btn-block btn-mobile">
+      Diseases
+    </a>
+  </div>
+
+ <hr />
+  <div ng-show="false" >
+    <recommend-button fn="fn"></recommend-button>
+  </div>
+</div>
